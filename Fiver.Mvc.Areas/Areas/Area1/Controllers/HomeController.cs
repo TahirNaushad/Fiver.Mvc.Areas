@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Fiver.Mvc.Areas.Areas.Area1.Models.Home;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Fiver.Mvc.Areas.Areas.Area1.Controllers
 {
@@ -12,11 +7,7 @@ namespace Fiver.Mvc.Areas.Areas.Area1.Controllers
     {
         public IActionResult Index()
         {
-            var model = new IndexViewModel
-            {
-                GreetingMessage = "Hello from Area1"
-            };
-            return View(model);
+            return View();
         }
     }
 }

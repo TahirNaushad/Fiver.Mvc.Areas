@@ -30,7 +30,7 @@ namespace Fiver.Mvc.Areas
             {
                 routes.MapRoute(
                     name: "area",
-                    template: "{area}/{controller=Home}/{action=Index}/{id?}");
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
                 routes.MapRoute(
                     name: "default",
