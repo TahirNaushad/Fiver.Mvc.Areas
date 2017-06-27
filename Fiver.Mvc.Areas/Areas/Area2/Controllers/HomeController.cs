@@ -9,5 +9,10 @@ namespace Fiver.Mvc.Areas.Areas.Area2.Controllers
         {
             return View();
         }
+
+        public IActionResult About()
+        {
+            return View();
+        }
     }
 }
